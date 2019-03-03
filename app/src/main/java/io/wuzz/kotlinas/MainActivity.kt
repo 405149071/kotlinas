@@ -8,6 +8,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import model.User
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.sdk27.coroutines.onClick
+import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
 import org.jetbrains.anko.uiThread
 import java.net.URL
@@ -52,6 +53,10 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
+        }
+        // listview
+        btn3.setOnClickListener {
+            startActivity<ListviewActivity>()
         }
 
     }

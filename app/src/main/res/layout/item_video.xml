@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dip">
+
+
+    <ImageView
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:id="@+id/item_img"
+        android:layout_marginRight="10dip"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_title"
+        android:text="新闻发布系统"
+        android:layout_toRightOf="@id/item_img"
+        android:textSize="24dip"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_price"
+        android:text="¥ 30.00"
+        android:layout_toRightOf="@id/item_img"
+        android:layout_below="@id/item_title"
+        android:textSize="22dip"
+        android:layout_marginTop="20px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_time"
+        android:text="2018-09-09"
+        android:layout_toRightOf="@id/item_img"
+        android:layout_below="@id/item_price"
+        android:textSize="18dip"
+        android:layout_marginTop="20px"/>
+
+</RelativeLayout>
