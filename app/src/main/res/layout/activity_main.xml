@@ -35,4 +35,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+
+    <Button
+        android:id="@+id/btnwebview"
+        android:text="webview页面"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

@@ -59,5 +59,10 @@ class MainActivity : AppCompatActivity() {
             startActivity<ListviewActivity>()
         }
 
+        // 唤起webview
+        btnwebview.setOnClickListener{
+            startActivity<WebviewActivity>(Pair("key","唤起来来"))
+        }
+
     }
 }
