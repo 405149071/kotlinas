@@ -7,7 +7,6 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import model.User
 import org.jetbrains.anko.doAsync
-import org.jetbrains.anko.sdk27.coroutines.onClick
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
 import org.jetbrains.anko.uiThread
@@ -19,12 +18,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
         //懒加载
         val user1  by lazy {
             User()
         }
-
         btn1.setOnClickListener {
             btn1.text="hihihi"
             tv1.text="lalall"
